@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tronbyt-server</Name>
+  <Repository>ghcr.io/tronbyt/server:latest</Repository>
+  <Registry>https://ghcr.io/tronbyt/server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/194050-support-bigsing-tronbyt-server/</Support>
+  <Project>https://github.com/tronbyt</Project>
+  <Overview>Tronbyt is an ecosystem replacement for Tidbyt. Tronbyt-server is the system for adding and configuring apps as well as serving to the Tronbyt hardware.</Overview>
+  <Category>HomeAutomation: Productivity: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/bigsing/unraid-templates/refs/heads/main/images/tronbyt-server.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Host Path 1" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
+  <Config Name="Host Path 2" Target="/app/user" Default="/mnt/user/appdata/tronbyt/users" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Host Path 3" Target="/app/data" Default="/mnt/user/appdata/tronbyt/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Key 1" Target="SERVER_HOSTNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Key 2" Target="SERVER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Key 3" Target="SYSTEM_APPS_REPO" Default="https://github.com/tronbyt/apps.git" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/tronbyt/apps.git</Config>
+  <Config Name="Key 4" Target="PRODUCTION" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Key 5" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 6" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>  
+  <TailscaleStateDir/>
+</Container>
