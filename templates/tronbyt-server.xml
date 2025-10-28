@@ -25,11 +25,9 @@
   <Config Name="Host Path 1" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
   <Config Name="Host Path 2" Target="/app/user" Default="/mnt/user/appdata/tronbyt/users" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Host Path 3" Target="/app/data" Default="/mnt/user/appdata/tronbyt/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Key 1" Target="SERVER_HOSTNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Key 2" Target="SERVER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Key 3" Target="SYSTEM_APPS_REPO" Default="https://github.com/tronbyt/apps.git" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/tronbyt/apps.git</Config>
-  <Config Name="Key 4" Target="PRODUCTION" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
-  <Config Name="Key 5" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Key 6" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>  
+  <Config Name="Key 1" Target="SYSTEM_APPS_REPO" Default="https://github.com/tronbyt/apps.git" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/tronbyt/apps.git</Config>
+  <Config Name="Key 2" Target="PRODUCTION" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Key 3" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 4" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>  
   <TailscaleStateDir/>
 </Container>
