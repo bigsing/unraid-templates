@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>tronbyt-server</Name>
-  <Repository>ghcr.io/tronbyt/server:latest</Repository>
+  <Repository>ghcr.io/tronbyt/server:1</Repository>
   <Registry>https://ghcr.io/tronbyt/server</Registry>
   <Network>bridge</Network>
   <MyIP/>
