@@ -23,8 +23,8 @@
   <Requires/>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="Timezone" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="used to sync docker with host time" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>  
-  <Config Name="Config Path 1" Target="/app/data" Default="/mnt/user/appdata/tronbyt/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Config Path 2" Target="/app/users" Default="/mnt/user/appdata/tronbyt/users" Mode="rw" Description="Can be removed after migrating from v1 to v2 and one time migration is complete." Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Config Path 1" Target="/app/data" Default="/mnt/user/appdata/tronbyt/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Config Path 2" Target="/app/users" Default="/mnt/user/appdata/tronbyt/users" Mode="rw" Description="Required for v1. Can be removed after one-time db migration from v1 to v2." Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <TailscaleStateDir/>
