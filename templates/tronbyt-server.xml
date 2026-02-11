@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/194050-support-bigsing-tronbyt-server/</Support>
+  <Support>https://forums.unraid.net/topic/194050-support-bigsing-docker-templates/</Support>
   <Project>https://github.com/tronbyt</Project>
   <Overview>Tronbyt is an ecosystem replacement for Tidbyt. Tronbyt-server is the system for adding and configuring apps as well as serving to the Tronbyt hardware.</Overview>
   <Category>HomeAutomation: Productivity: Other:</Category>
